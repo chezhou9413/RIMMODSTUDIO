@@ -1,0 +1,352 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|c:\\users\\30978\\desktop\\\u4FEE\u6539\\rimmod\\rimbreak\\1.6\\source\\rimbreak\\rbgizmo\\gizmo_favor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbgizmo\\gizmo_favor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbgizmo\\gizmo_snowbreath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbgizmo\\gizmo_snowbreath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbgizmo\\command_abilitytogglewolvestreadsnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbgizmo\\command_abilitytogglewolvestreadsnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbabilitycomps\\abilitycomp_wolvestreadsnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbabilitycomps\\abilitycomp_wolvestreadsnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|c:\\users\\30978\\desktop\\\u4FEE\u6539\\rimmod\\rimbreak\\1.6\\source\\rimbreak\\rbabilitycomps\\abilitycomp_beststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbabilitycomps\\abilitycomp_beststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\comp\\compproperties_disablebodytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:comp\\compproperties_disablebodytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|c:\\users\\30978\\desktop\\\u4FEE\u6539\\rimmod\\rimbreak\\1.6\\source\\rimbreak\\rbverb\\verb_beststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbverb\\verb_beststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\defref\\rbability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:defref\\rbability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbverb\\verb_jin_judgmentfinalstrike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbverb\\verb_jin_judgmentfinalstrike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbverb\\verb_wolvestreadsnowoperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbverb\\verb_wolvestreadsnowoperate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbverb\\verb_jin_paidjustice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbverb\\verb_jin_paidjustice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbjob\\jobgiver_jinpaidjustice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbjob\\jobgiver_jinpaidjustice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\defref\\rbhediffdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:defref\\rbhediffdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|c:\\users\\30978\\desktop\\\u4FEE\u6539\\rimmod\\rimbreak\\1.6\\source\\rimbreak\\rbprojectile\\projectile_paidjustice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbprojectile\\projectile_paidjustice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbprojectile\\projectile_snowbreath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbprojectile\\projectile_snowbreath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rbmote\\mote_projectilefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:rbmote\\mote_projectilefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\utility\\abilitycompget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:utility\\abilitycompget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\utility\\moteutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:utility\\moteutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|rimbreak||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CECECFA-92D0-43CF-97D1-1C16ED233680}|rimbreak.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AbilityComp_BestState.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbAbilityComps\\AbilityComp_BestState.cs",
+              "RelativeDocumentMoniker": "RbAbilityComps\\AbilityComp_BestState.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbAbilityComps\\AbilityComp_BestState.cs",
+              "RelativeToolTip": "RbAbilityComps\\AbilityComp_BestState.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAiwB0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T10:38:01.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Verb_BestState.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_BestState.cs",
+              "RelativeDocumentMoniker": "RbVerb\\Verb_BestState.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_BestState.cs",
+              "RelativeToolTip": "RbVerb\\Verb_BestState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T10:26:46.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AbilityComp_WolvesTreadSnow.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbAbilityComps\\AbilityComp_WolvesTreadSnow.cs",
+              "RelativeDocumentMoniker": "RbAbilityComps\\AbilityComp_WolvesTreadSnow.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbAbilityComps\\AbilityComp_WolvesTreadSnow.cs",
+              "RelativeToolTip": "RbAbilityComps\\AbilityComp_WolvesTreadSnow.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T13:17:35.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompProperties_DisableBodyType.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\comp\\CompProperties_DisableBodyType.cs",
+              "RelativeDocumentMoniker": "comp\\CompProperties_DisableBodyType.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\comp\\CompProperties_DisableBodyType.cs",
+              "RelativeToolTip": "comp\\CompProperties_DisableBodyType.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAUwA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T05:32:43.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Command_AbilityToggleWolvesTreadSnow.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbGizmo\\Command_AbilityToggleWolvesTreadSnow.cs",
+              "RelativeDocumentMoniker": "RbGizmo\\Command_AbilityToggleWolvesTreadSnow.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbGizmo\\Command_AbilityToggleWolvesTreadSnow.cs",
+              "RelativeToolTip": "RbGizmo\\Command_AbilityToggleWolvesTreadSnow.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwBQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:01:48.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gizmo_Favor.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbGizmo\\Gizmo_Favor.cs",
+              "RelativeDocumentMoniker": "RbGizmo\\Gizmo_Favor.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbGizmo\\Gizmo_Favor.cs",
+              "RelativeToolTip": "RbGizmo\\Gizmo_Favor.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwC0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T10:35:29.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gizmo_SnowBreath.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbGizmo\\Gizmo_SnowBreath.cs",
+              "RelativeDocumentMoniker": "RbGizmo\\Gizmo_SnowBreath.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbGizmo\\Gizmo_SnowBreath.cs",
+              "RelativeToolTip": "RbGizmo\\Gizmo_SnowBreath.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T13:11:06.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RbAbility.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\DefRef\\RbAbility.cs",
+              "RelativeDocumentMoniker": "DefRef\\RbAbility.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\DefRef\\RbAbility.cs",
+              "RelativeToolTip": "DefRef\\RbAbility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T14:08:07.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Verb_Jin_JudgmentFinalStrike.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_Jin_JudgmentFinalStrike.cs",
+              "RelativeDocumentMoniker": "RbVerb\\Verb_Jin_JudgmentFinalStrike.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_Jin_JudgmentFinalStrike.cs",
+              "RelativeToolTip": "RbVerb\\Verb_Jin_JudgmentFinalStrike.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwGcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:37:23.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Verb_WolvesTreadSnowOperate.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_WolvesTreadSnowOperate.cs",
+              "RelativeDocumentMoniker": "RbVerb\\Verb_WolvesTreadSnowOperate.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_WolvesTreadSnowOperate.cs",
+              "RelativeToolTip": "RbVerb\\Verb_WolvesTreadSnowOperate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T12:32:21.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Verb_Jin_PaidJustice.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_Jin_PaidJustice.cs",
+              "RelativeDocumentMoniker": "RbVerb\\Verb_Jin_PaidJustice.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbVerb\\Verb_Jin_PaidJustice.cs",
+              "RelativeToolTip": "RbVerb\\Verb_Jin_PaidJustice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T03:44:53.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JobGiver_JinPaidJustice.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbJob\\JobGiver_JinPaidJustice.cs",
+              "RelativeDocumentMoniker": "RbJob\\JobGiver_JinPaidJustice.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbJob\\JobGiver_JinPaidJustice.cs",
+              "RelativeToolTip": "RbJob\\JobGiver_JinPaidJustice.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvw4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T07:12:54.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RbHediffDef.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\DefRef\\RbHediffDef.cs",
+              "RelativeDocumentMoniker": "DefRef\\RbHediffDef.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\DefRef\\RbHediffDef.cs",
+              "RelativeToolTip": "DefRef\\RbHediffDef.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T13:36:12.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Projectile_PaidJustice.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbProjectile\\Projectile_PaidJustice.cs",
+              "RelativeDocumentMoniker": "RbProjectile\\Projectile_PaidJustice.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbProjectile\\Projectile_PaidJustice.cs",
+              "RelativeToolTip": "RbProjectile\\Projectile_PaidJustice.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:04:42.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Mote_ProjectileFollow.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbMote\\Mote_ProjectileFollow.cs",
+              "RelativeDocumentMoniker": "RbMote\\Mote_ProjectileFollow.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbMote\\Mote_ProjectileFollow.cs",
+              "RelativeToolTip": "RbMote\\Mote_ProjectileFollow.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T02:59:00.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Projectile_SnowBreath.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbProjectile\\Projectile_SnowBreath.cs",
+              "RelativeDocumentMoniker": "RbProjectile\\Projectile_SnowBreath.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\RbProjectile\\Projectile_SnowBreath.cs",
+              "RelativeToolTip": "RbProjectile\\Projectile_SnowBreath.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwDgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T22:41:15.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AbilityCompGet.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\Utility\\AbilityCompGet.cs",
+              "RelativeDocumentMoniker": "Utility\\AbilityCompGet.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\Utility\\AbilityCompGet.cs",
+              "RelativeToolTip": "Utility\\AbilityCompGet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T14:01:32.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MoteUtility.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\Utility\\MoteUtility.cs",
+              "RelativeDocumentMoniker": "Utility\\MoteUtility.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\Utility\\MoteUtility.cs",
+              "RelativeToolTip": "Utility\\MoteUtility.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T06:40:06.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "rimbreak",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rimbreak.csproj",
+              "RelativeDocumentMoniker": "rimbreak.csproj",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\rimbreak.csproj",
+              "RelativeToolTip": "rimbreak.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-23T05:34:18.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "C:\\Users\\30978\\Desktop\\\u4FEE\u6539\\rimmod\\Rimbreak\\1.6\\Source\\rimbreak\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T05:20:40.294Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

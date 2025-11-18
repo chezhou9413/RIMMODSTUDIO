@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AbilityDef>
+        <defName>jin_JudgmentFinalStrike</defName>
+        <label>公义绝斩</label>
+        <description>对目标区域5X5造成50点伤害, 并赐予自身[以身为刃]BUFF, 持续50s, [以身为刃]BUFF下有偿正义冷却减少-90%</description>
+        <!-- <iconPath>Gene/OGR_Gene_DestructiveStomp</iconPath> -->
+        <cooldownTicksRange>4800~4800</cooldownTicksRange>
+        <hostile>true</hostile>
+        <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>rimbreak.RbVerb.Verb_Jin_JudgmentFinalStrike</verbClass>
+            <label>公义绝斩</label>
+            <violent>true</violent>
+            <warmupTime>0</warmupTime>
+            <range>0</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>false</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+</Defs> 

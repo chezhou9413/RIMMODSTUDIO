@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>Ogryn_Dash_Job</defName>
+        <driverClass>OgrynRace.OgrynJobDrive.JobDrive_OgrynDash</driverClass>
+        <reportString>正在冲刺！！！</reportString>
+        <playerInterruptible>true</playerInterruptible>
+        <modExtensions>
+            <li Class="OgrynRace.OgrynJobDrive.JobDefExtension_OgrynDash">
+                <dashSpeed>0.4</dashSpeed>
+                <knockbackDistance>10</knockbackDistance>
+                <hediffDef>Ogryn_Stun</hediffDef>
+            </li>
+        </modExtensions>
+    </JobDef>
+</Defs>

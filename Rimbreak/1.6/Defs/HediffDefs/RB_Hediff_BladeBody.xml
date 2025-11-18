@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 以身为剑 Hediff 定义 -->
+    <HediffDef>
+        <defName>RB_BladeBody</defName>
+        <label>以身为刃</label>
+        <description>有偿正义的冷却减少-90%</description>
+        <descriptionShort>有偿正义的冷却减少-90%</descriptionShort>
+        
+        <!-- 基础属性 -->
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+        
+        <!-- 组件：自动消失，显示剩余时间 -->
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+                <disappearsAfterTicks>3000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        
+        <!-- 阶段定义 -->
+        <stages>
+            <li>
+                <label>以身为刃</label>
+                <!-- 纯测试用状态，无任何修正效果 -->
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

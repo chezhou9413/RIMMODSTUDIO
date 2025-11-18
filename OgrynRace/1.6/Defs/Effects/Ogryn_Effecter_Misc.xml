@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <EffecterDef>
+        <defName>OgrynEmergencePointComplete8X8</defName>
+        <maintainTicks>300</maintainTicks>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_CameraShakeSingle</subEffecterClass>
+                <cameraShake>0.2</cameraShake>
+                <distanceAttenuationScale>1</distanceAttenuationScale>
+                <distanceAttenuationMax>120</distanceAttenuationMax>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>ShockwaveFast</fleckDef>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <positionRadius>0</positionRadius>
+                <scale>0.005</scale>
+                <rotation>0</rotation>
+                <rotationRate>0</rotationRate>
+                <absoluteAngle>True</absoluteAngle>
+                <positionOffset>(0, 0, 0)</positionOffset>
+                <angle>0</angle>
+                <fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+                <speed>0</speed>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>DustPuffThick</fleckDef>
+                <burstCount>20~25</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <positionRadius>4</positionRadius>
+                <scale>0.6~1</scale>
+                <rotation>0</rotation>
+                <rotationRate>-80~80</rotationRate>
+                <absoluteAngle>False</absoluteAngle>
+                <positionOffset>(0, 0, 0)</positionOffset>
+                <angle>0~360</angle>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+                <speed>0.35~0.45</speed>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+                <fleckDef>ThrownDebris</fleckDef>
+                <initialDelayTicks>0</initialDelayTicks>
+                <chancePerTick>1</chancePerTick>
+                <chancePeriodTicks>3</chancePeriodTicks>
+                <burstCount>2~4</burstCount>
+                <lifespanMaxTicks>25</lifespanMaxTicks>
+                <spawnLocType>OnSource</spawnLocType>
+                <rotationRate>120~250</rotationRate>
+                <positionRadius>1</positionRadius>
+                <positionRadiusMin>1</positionRadiusMin>
+                <scale>0.4~0.75</scale>
+                <rotation>0~360</rotation>
+                <rotationRate>100~200</rotationRate>
+                <absoluteAngle>False</absoluteAngle>
+                <positionOffset>(0, 0, 0)</positionOffset>
+                <angle>0~360</angle>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+                <speed>0.15~0.4</speed>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>GroundCrack</fleckDef>
+                <burstCount>3~5</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <positionRadius>1</positionRadius>
+                <positionRadiusMin>1</positionRadiusMin>
+                <scale>2~3</scale>
+                <rotation>0~360</rotation>
+                <rotationRate>0</rotationRate>
+                <absoluteAngle>True</absoluteAngle>
+                <positionOffset>(0, 0, 0)</positionOffset>
+                <angle>0</angle>
+                <fleckUsesAngleForVelocity>False</fleckUsesAngleForVelocity>
+                <speed>0</speed>
+                <color>(1, 1, 1, 0.9)</color>
+            </li>
+        </children>
+    </EffecterDef>
+</Defs> 

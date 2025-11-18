@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>OgrynTech</defName>
+    <label>欧戈苓</label>
+    <generalTitle>欧戈苓传统工艺研究</generalTitle>
+    <generalDescription>研究欧戈苓的传统工艺和技术，包括合金制作、锻造技艺和独特的文化技术。这些技术体现了欧戈苓深厚的文化底蕴和精湛的工艺水平。</generalDescription>
+  </ResearchTabDef>
+</Defs> 

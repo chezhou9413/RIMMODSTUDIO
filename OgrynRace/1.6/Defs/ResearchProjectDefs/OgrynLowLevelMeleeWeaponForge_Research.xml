@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 欧戈苓低级近战武器锻造：解锁巨棒、砍刀等基础武器的锻造工艺与规范 -->
+  <ResearchProjectDef>
+    <defName>OgrynLowLevelMeleeWeaponForge</defName>
+    <label>欧戈苓低级近战武器</label>
+    <description>欧戈苓低级近战武器（如欧戈巨棒、欧戈砍刀T1）的材料选择、锻造与装配流程，解锁基础武器制造</description>
+    <!-- 研究成本：1000科研点数 -->
+    <baseCost>1500</baseCost>
+    <!-- 技术等级：工业时代 -->
+    <techLevel>Medieval</techLevel>
+    <!-- 前置：原版锻造（Smithing） -->
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+    <!-- 研究树位置：避免与同系研究重叠（可根据实际布局再调） -->
+    <researchViewX>0</researchViewX>
+    <researchViewY>4</researchViewY>
+    <!-- 所属页签 -->
+    <tab>OgrynTech</tab>
+    <!-- 主题化信件提示 -->
+    <discoveredLetterTitle>关于：欧戈苓低级近战武器锻造</discoveredLetterTitle>
+    <discoveredLetterText>殖民地已掌握欧戈苓低级近战武器的基础锻造与装配规范，可在锻造台生产欧戈巨棒、欧戈砍刀等入门武器。</discoveredLetterText>
+  </ResearchProjectDef>
+</Defs>
+
+

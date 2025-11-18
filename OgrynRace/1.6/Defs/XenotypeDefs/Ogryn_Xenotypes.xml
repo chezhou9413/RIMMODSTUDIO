@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <XenotypeDef>
+        <defName>OGR_Xenotype_Ogryn</defName>
+        <label>欧戈苓</label>
+        <description>欧戈苓的起源多与 “饥饿与性欲” 的诅咒或古老神祇相关。她们是远古丰饶与生育神祇芙莉安娜的后裔，但是在一次战争中摧毁了掌管灶火神祇的祭坛，被降下 “永无止境的饥饿与永世的生理饥渴” 诅咒 —— 因此需要大量的食物和种族再也无法诞生男婴，唯有无止境的种植畜牧和掠夺异种族的男性来繁衍后代。​</description>
+        <inheritable>true</inheritable>
+        <displayPriority>10</displayPriority>
+        <iconPath>Gene/OGR_Xenotype_Ogryn</iconPath>
+        <genes>
+            <li>OGR_Gene_PrimordialMight</li>
+            <li>OGR_Gene_OgrynDashAbility</li>
+            <li>OGR_Gene_DestructiveStomp</li>
+            <li>OGR_Gene_BrainBoosted</li>
+            <li>OGR_Gene_SteelBody</li>
+            <li>OGR_Gene_OgrynDisableAttack</li>
+            <li>PsychicAbility_Dull</li>
+            <li>Libido_High</li>
+            <li>DarkVision</li>
+            <li>AptitudeStrong_Melee</li>
+            <li>AptitudeTerrible_Shooting</li>
+            <li>AptitudePoor_Artistic</li>
+            <li>AptitudePoor_Intellectual</li>
+        </genes>
+    </XenotypeDef>
+</Defs> 

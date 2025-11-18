@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>OGR_Ability_OgrynDashAbility</defName>
+    <label>蛮牛冲撞</label>
+    <description>向目标距离冲刺，到目标位置后把目标击飞并眩晕</description>
+    <iconPath>Gene/OGR_Gene_OgrynDashAbility</iconPath>
+    <cooldownTicksRange>2500~2500</cooldownTicksRange>
+    <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>OgrynRace.OgrynVerb.Verb_OgrynDashAbility</verbClass>
+      <label>蛮牛冲撞</label>
+      <violent>true</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.1</warmupTime>
+      <range>30</range>
+      <requireLineOfSight>false</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps></comps>
+  </AbilityDef>
+</Defs> 

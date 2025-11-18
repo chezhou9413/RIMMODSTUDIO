@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>横向排列图集 — 精灵帧导出与预览</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3b82f6}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    body{background:linear-gradient(180deg,#071025 0%,#07152a 100%);color:#e6eef8;padding:18px;box-sizing:border-box}
+    h1{margin:0 0 8px;font-size:18px}
+    .toolbar{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+    .btn{background:var(--card);border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer}
+    .btn.primary{background:var(--accent);color:white;border:none}
+    .drop{border:2px dashed rgba(255,255,255,0.06);padding:18px;border-radius:10px;display:flex;align-items:center;gap:12px}
+    .drop.dragover{background:rgba(59,130,246,0.08);border-color:rgba(59,130,246,0.4)}
+    .gallery{display:flex;gap:10px;overflow-x:auto;padding:12px 6px;margin-top:12px}
+    .thumb{min-width:160px;height:120px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.12));border-radius:8px;padding:8px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+    .thumb img{max-width:100%;max-height:72px;border-radius:6px;object-fit:cover}
+    .thumb .name{font-size:12px;color:var(--muted);margin-top:6px;word-break:break-all;text-align:center}
+    .thumb .remove{position:absolute;right:6px;top:6px;background:rgba(0,0,0,0.4);border-radius:6px;padding:4px;cursor:pointer}
+    .hint{font-size:13px;color:var(--muted)}
+    .spacer{flex:1}
+    input[type=file]{display:none}
+    .controls{display:flex;gap:8px;align-items:center}
+    .options{display:flex;gap:10px;align-items:center;margin-left:8px}
+    .previewWrap{margin-top:14px;display:flex;gap:12px;align-items:flex-start}
+    .previewArea{background:#071827;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+    .previewArea img{max-width:100%;height:auto;display:block}
+    label.small{font-size:12px;color:var(--muted)}
+    input[type=number]{width:80px;padding:6px;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--muted)}
+    @media (max-width:800px){.previewWrap{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <h1>横向排列图集 — 精灵帧导出与预览</h1>
+  <div class="toolbar">
+    <label class="btn" for="fileInput">📁 选择图片</label>
+    <input id="fileInput" type="file" accept="image/*" multiple>
+    <button class="btn" id="clearBtn">🧹 清除图集</button>
+    <button class="btn primary" id="exportSpriteBtn">🖼️ 导出精灵帧 (PNG)</button>
+    <button class="btn" id="previewSpriteBtn">🔍 预览精灵帧</button>
+
+    <div class="spacer"></div>
+
+    <label class="btn" id="importLabel">🔁 导入（按文件名自动排序）
+      <input id="importInput" type="file" accept="image/*" multiple style="display:none">
+    </label>
+  </div>
+
+  <div id="dropzone" class="drop">
+    <div style="flex:1">
+      <div class="hint">把图片拖放到这里上传，或点击“选择图片”。导入（右侧按钮）会根据文件名进行排序再加入。支持 PNG/JPG/GIF。</div>
+    </div>
+    <div style="min-width:140px;text-align:right;color:var(--muted)">当前: <span id="count">0</span> 张</div>
+  </div>
+
+  <div id="gallery" class="gallery" aria-label="图片画廊"></div>
+
+  <div class="previewWrap">
+    <div class="previewArea" style="flex:1">
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+        <label class="small">间隔(px)</label>
+        <input id="gapInput" type="number" min="0" value="0">
+        <label class="small">边距(px)</label>
+        <input id="paddingInput" type="number" min="0" value="0">
+        <label class="small">缩放(%)</label>
+        <input id="scaleInput" type="number" min="10" max="1000" value="100">
+      </div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:6px">预览（点击“预览精灵帧”生成）：</div>
+      <div id="previewContainer" style="min-height:120px;display:flex;align-items:center;justify-content:center">
+        <div style="color:var(--muted)">尚未生成预览</div>
+      </div>
+    </div>
+    <div style="width:320px;max-width:40%;min-width:260px">
+      <div style="background:#071827;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
+        <div style="font-weight:600;margin-bottom:8px">导出信息</div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:6px">导出时会按当前画廊顺序合并为一张横向精灵图，文件为 PNG 格式。文件名会包含时间戳。</div>
+        <div style="display:flex;gap:6px;margin-top:8px">
+          <button class="btn" id="downloadMetaBtn">⬇️ 下载预览图 (另存为 PNG)</button>
+        </div>
+        <div style="margin-top:12px;font-size:13px;color:var(--muted)">提示：若图片尺寸不同，会按图高对齐并在顶部居中（可用边距调整）。</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const importInput = document.getElementById('importInput');
+    const gallery = document.getElementById('gallery');
+    const dropzone = document.getElementById('dropzone');
+    const countSpan = document.getElementById('count');
+    const clearBtn = document.getElementById('clearBtn');
+    const exportSpriteBtn = document.getElementById('exportSpriteBtn');
+    const previewSpriteBtn = document.getElementById('previewSpriteBtn');
+    const gapInput = document.getElementById('gapInput');
+    const paddingInput = document.getElementById('paddingInput');
+    const scaleInput = document.getElementById('scaleInput');
+    const previewContainer = document.getElementById('previewContainer');
+    const downloadMetaBtn = document.getElementById('downloadMetaBtn');
+
+    // 存储项: {id, name, dataUrl, img (Image object), width, height, file}
+    let items = [];
+
+    function updateCount(){ countSpan.textContent = items.length }
+
+    function render(){
+      gallery.innerHTML = '';
+      items.forEach(it => {
+        const el = document.createElement('div');
+        el.className = 'thumb';
+        el.draggable = false;
+        el.dataset.id = it.id;
+        el.innerHTML = `
+          <button class="remove" title="移除">✖</button>
+          <img src="${it.dataUrl}" alt="${escapeHtml(it.name)}">
+          <div class="name">${escapeHtml(it.name)}</div>
+        `;
+        el.querySelector('.remove').addEventListener('click',()=>{
+          items = items.filter(x=>x.id!==it.id);
+          render(); updateCount();
+        });
+        gallery.appendChild(el);
+      });
+    }
+
+    function escapeHtml(s){ return s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;') }
+
+    function fileToItem(file){
+      return new Promise((res,rej)=>{
+        const reader = new FileReader();
+        reader.onload = async e => {
+          const dataUrl = e.target.result;
+          const img = new Image();
+          img.onload = () => {
+            res({id:cryptoRandomId(), name:file.name, dataUrl, img, width:img.width, height:img.height, file});
+          };
+          img.onerror = rej;
+          img.src = dataUrl;
+        };
+        reader.onerror = rej;
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function cryptoRandomId(){ return Math.random().toString(36).slice(2,9) }
+
+    async function handleFiles(fileList, sortByName=false){
+      let files = Array.from(fileList);
+      if(sortByName) files.sort((a,b)=> a.name.localeCompare(b.name, undefined, {numeric:true, sensitivity:'base'}));
+      const results = await Promise.all(files.map(f=>fileToItem(f)));
+      items = items.concat(results);
+      render(); updateCount();
+    }
+
+    // dropzone handlers
+    ;['dragenter','dragover'].forEach(ev=>{
+      dropzone.addEventListener(ev,e=>{e.preventDefault();dropzone.classList.add('dragover')})
+    });
+    ;['dragleave','drop'].forEach(ev=>{
+      dropzone.addEventListener(ev,e=>{e.preventDefault();dropzone.classList.remove('dragover')})
+    });
+    dropzone.addEventListener('drop', e=>{
+      const dt = e.dataTransfer;
+      if(dt && dt.files && dt.files.length) handleFiles(dt.files, false);
+    });
+
+    fileInput.addEventListener('change', e=>{
+      if(e.target.files.length) handleFiles(e.target.files, false);
+      e.target.value = '';
+    });
+
+    importInput.addEventListener('change', e=>{
+      if(e.target.files.length) handleFiles(e.target.files, true);
+      e.target.value = '';
+    });
+
+    clearBtn.addEventListener('click', ()=>{
+      if(!confirm('确定要清空图集吗？此操作不可撤销。')) return;
+      items = [];
+      render(); updateCount();
+      previewContainer.innerHTML = '<div style="color:var(--muted)">尚未生成预览</div>';
+    });
+
+    // Sortable 初始化（水平）
+    const sortable = new Sortable(gallery, {
+      animation:150,
+      direction: 'horizontal',
+      draggable: '.thumb',
+      onEnd: ()=>{
+        const ids = Array.from(gallery.children).map(c=>c.dataset.id);
+        items = ids.map(id => items.find(it=>it.id===id)).filter(Boolean);
+      }
+    });
+
+    // 生成精灵帧（横向合并）
+    async function generateSprite({gap=0,padding=0,scale=1,returnBlob=false}={}){
+      if(items.length===0) throw new Error('没有图片可用于生成精灵帧');
+      // 按当前顺序计算尺寸
+      const widths = items.map(it=>Math.round(it.width * scale));
+      const heights = items.map(it=>Math.round(it.height * scale));
+      const totalWidth = widths.reduce((a,b)=>a+b,0) + gap*(items.length-1) + padding*2;
+      const maxHeight = Math.max(...heights) + padding*2;
+
+      const canvas = document.createElement('canvas');
+      canvas.width = totalWidth;
+      canvas.height = maxHeight;
+      const ctx = canvas.getContext('2d');
+      // 背景透明
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+
+      let x = padding;
+      for(let i=0;i<items.length;i++){
+        const it = items[i];
+        const w = Math.round(it.width * scale);
+        const h = Math.round(it.height * scale);
+        // 垂直居中绘制（位于画布中线）
+        const y = padding + Math.round((maxHeight - padding*2 - h)/2);
+        // 画图（如果需要缩放，使用 drawImage 的宽高参数）
+        ctx.drawImage(it.img, 0,0,it.width,it.height, x, y, w, h);
+        x += w + gap;
+      }
+
+      if(returnBlob){
+        return await new Promise(res=>canvas.toBlob(b=>res(b), 'image/png'));
+      }
+      return canvas;
+    }
+
+    // 预览
+    previewSpriteBtn.addEventListener('click', async ()=>{
+      try{
+        const gap = Math.max(0, Number(gapInput.value)||0);
+        const padding = Math.max(0, Number(paddingInput.value)||0);
+        const scale = Math.max(0.01, (Number(scaleInput.value)||100)/100);
+        const canvas = await generateSprite({gap, padding, scale, returnBlob:false});
+        previewContainer.innerHTML = '';
+        const img = document.createElement('img');
+        img.src = canvas.toDataURL('image/png');
+        img.alt = 'sprite-preview';
+        previewContainer.appendChild(img);
+      }catch(err){
+        alert(err.message || '生成预览时出错');
+      }
+    });
+
+    // 导出 PNG
+    exportSpriteBtn.addEventListener('click', async ()=>{
+      try{
+        if(items.length===0){ alert('没有图片可导出'); return }
+        const gap = Math.max(0, Number(gapInput.value)||0);
+        const padding = Math.max(0, Number(paddingInput.value)||0);
+        const scale = Math.max(0.01, (Number(scaleInput.value)||100)/100);
+        const blob = await generateSprite({gap, padding, scale, returnBlob:true});
+        const filename = `sprite-${new Date().toISOString().slice(0,19).replaceAll(':','')}.png`;
+        downloadBlob(blob, filename);
+      }catch(err){
+        alert(err.message || '导出精灵帧失败');
+      }
+    });
+
+    // 下载预览（当前预览内容）
+    downloadMetaBtn.addEventListener('click', async ()=>{
+      try{
+        // 如果已经有预览 img，直接下载其 dataURL，否则生成一次
+        const imgEl = previewContainer.querySelector('img');
+        if(imgEl){
+          const dataUrl = imgEl.src;
+          const blob = dataURLtoBlob(dataUrl);
+          downloadBlob(blob, `sprite-preview-${new Date().toISOString().slice(0,19).replaceAll(':','')}.png`);
+          return;
+        }
+        // 生成并下载
+        const gap = Math.max(0, Number(gapInput.value)||0);
+        const padding = Math.max(0, Number(paddingInput.value)||0);
+        const scale = Math.max(0.01, (Number(scaleInput.value)||100)/100);
+        const blob = await generateSprite({gap, padding, scale, returnBlob:true});
+        downloadBlob(blob, `sprite-preview-${new Date().toISOString().slice(0,19).replaceAll(':','')}.png`);
+      }catch(err){
+        alert('下载预览失败：' + (err.message||err));
+      }
+    });
+
+    function dataURLtoBlob(dataurl){
+      const arr = dataurl.split(',');
+      const mime = arr[0].match(/:(.*?);/)[1];
+      const bstr = atob(arr[1]);
+      let n = bstr.length;
+      const u8arr = new Uint8Array(n);
+      while(n--) u8arr[n] = bstr.charCodeAt(n);
+      return new Blob([u8arr], {type:mime});
+    }
+
+    function downloadBlob(blob, filename){
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=>URL.revokeObjectURL(url), 5000);
+    }
+
+    // 初始渲染
+    render(); updateCount();
+  </script>
+</body>
+</html>

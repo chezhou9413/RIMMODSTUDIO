@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef>
+        <defName>OGR_Ability_OgrynDisableAttack</defName>
+        <label>致残打击</label>
+        <description>向目标发动致残打击，造成一次特殊的技能伤害并使目标失去移动能力3小时</description>
+        <iconPath>Gene/OGR_Gene_OgrynDisableAttack</iconPath>
+        <cooldownTicksRange>5000~5000</cooldownTicksRange>
+        <hostile>true</hostile>
+        <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>OgrynRace.OgrynVerb.Verb_OgrynDisableAttack</verbClass>
+            <label>致残打击</label>
+            <violent>true</violent>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <warmupTime>0.1</warmupTime>
+            <range>50</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <soundCast>Longjump_Jump</soundCast>
+            <soundLanding>Longjump_Land</soundLanding>
+            <targetParams>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="OgrynRace.comp.AngerCostCompProperties">
+                <angerAmount>20</angerAmount>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs> 

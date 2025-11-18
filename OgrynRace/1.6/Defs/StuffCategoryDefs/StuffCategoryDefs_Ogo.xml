@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ✅ 自定义材料类别：欧戈硬金类别 -->
+	<StuffCategoryDef>
+		<defName>OgoHardGoldCategory</defName>
+		<label>欧戈硬金制</label>
+		<description>专用于欧戈系列装备的特殊硬金属材料类别。</description>
+	</StuffCategoryDef>
+</Defs>

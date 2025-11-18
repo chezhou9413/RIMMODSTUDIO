@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 星尘回忆冲锋枪 - 基于原版重型冲锋枪 -->
+    <ThingDef ParentName="BaseWeapon">
+        <defName>lyfe_StardustMemory</defName>
+        <label>星尘回忆</label>
+        <description>一种紧凑型、大口径的冲锋枪。射程较长，威力强大，操控性能良好。发射高穿透力的子弹，能够有效击穿护甲。</description>
+
+        <!-- 科技等级 -->
+        <techLevel>Industrial</techLevel>
+
+        <!-- 禁用熔炼 -->
+        <smeltable>false</smeltable>
+
+        <comps>
+            <li Class="ChezhouLib.Comp.CompProperties_AbilityGiver_Direct">
+                <abilityDef>
+                    <li>lyfe_WolvesTreadSnow</li>
+                </abilityDef>
+            </li>
+        </comps>
+        <!-- 武器贴图设置 -->
+        <graphicData>
+            <texPath>appare/lifu/StardustMemory</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+        </graphicData>
+
+        <!-- 武器交互音效 -->
+        <soundInteract>Interact_SMG</soundInteract>
+
+        <!-- 武器分类 - 影响AI使用策略 -->
+        <weaponClasses>
+            <li>ShortShots</li>            <!-- 短距离射击 -->
+            <li>RangedHeavy</li>            <!-- 重型远程武器 -->
+        </weaponClasses>
+
+        <!-- 武器分类 - 远程武器 -->
+        <thingCategories>
+            <li>WeaponsRanged</li>
+        </thingCategories>
+
+        <!-- 奖励标签 -->
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+
+        <!-- 武器基础属性 -->
+        <statBases>
+            <MarketValue>1400</MarketValue>            <!-- 市场价值：1400（参考原版重型冲锋枪） -->
+            <Mass>3.5</Mass>            <!-- 重量（kg） -->
+            <AccuracyTouch>0.85</AccuracyTouch>            <!-- 近距离精度 -->
+            <AccuracyShort>0.65</AccuracyShort>            <!-- 短距离精度 -->
+            <AccuracyMedium>0.35</AccuracyMedium>            <!-- 中距离精度 -->
+            <AccuracyLong>0.20</AccuracyLong>            <!-- 远距离精度 -->
+            <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>            <!-- 武器冷却时间 -->
+        </statBases>
+        <!-- 射击属性 -->
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_StardustMemory</defaultProjectile>                <!-- 默认子弹 -->
+                <warmupTime>0.9</warmupTime>                <!-- 预热时间 -->
+                <range>40</range>                <!-- 射程：40格 -->
+                <burstShotCount>10</burstShotCount>                <!-- 连射次数：10发 -->
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>                <!-- 连发间隔：6 ticks (600rpm) -->
+                <soundCast>Shot_HeavySMG</soundCast>                <!-- 射击音效 -->
+                <soundCastTail>GunTail_Heavy</soundCastTail>                <!-- 射击尾音 -->
+                <muzzleFlashScale>9</muzzleFlashScale>                <!-- 枪口闪光缩放 -->
+            </li>
+        </verbs>
+
+        <!-- 武器标签 -->
+        <weaponTags>
+            <li>lyfeWeapon</li>
+        </weaponTags>
+
+        <!-- 近战工具（用于近战攻击） -->
+        <tools>
+            <li>
+                <label>握把</label>
+                <capacities>
+                    <li>Blunt</li>                    <!-- 钝击 -->
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>枪管</label>
+                <capacities>
+                    <li>Blunt</li>                    <!-- 钝击 -->
+                    <li>Poke</li>                    <!-- 戳刺 -->
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- 星尘回忆冲锋枪子弹 -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_StardustMemory</defName>
+        <label>星尘回忆子弹</label>
+        <!-- 子弹贴图 -->
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+
+        <!-- 子弹属性 -->
+        <projectile>
+            <damageDef>Bullet</damageDef>            <!-- 伤害类型：子弹 -->
+            <damageAmountBase>30</damageAmountBase>            <!-- 基础伤害：30 -->
+            <stoppingPower>1</stoppingPower>            <!-- 抑止能力：1 -->
+            <armorPenetrationBase>0.95</armorPenetrationBase>            <!-- 护甲穿透：95% -->
+            <speed>30</speed>            <!-- 子弹速度：48 -->
+        </projectile>
+    </ThingDef>
+</Defs>
+

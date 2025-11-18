@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 欧戈砍刀T1：入门级砍刀（割/刺为主），按需求加入配方与标签 -->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Ogryn_MeleeWeapon_OgoMachete</defName>
+    <label>欧戈砍刀</label>
+    <description>欧戈苓的基础战刀。宽大的刀身以砍切为主，刀尖在近距可用于刺击。</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Wappen/OgoMachete</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <!-- 制作与质量：对齐巨锤模板，可按需调整 -->
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>2.3</Mass>
+    </statBases>
+    <equippedAngleOffset>35</equippedAngleOffset>
+    <!-- 材料系统：金属材料（Metallic） -->
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <!-- 配方制作器：与巨锤一致，需研究前置与工作台 -->
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>OgrynLowLevelMeleeWeaponForge</li>
+      </researchPrerequisites>
+      <displayPriority>240</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+      <li>IndustrialMeleeAdvanced</li>
+      <li>OgrynMeleeLowCategory</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>OgrynExclusive</li>
+    </tradeTags>
+    <thingCategories>
+      <li>OgrynMeleeLowCategory</li>
+    </thingCategories>
+    <!-- 组件：质量、可着色、禁用材料染色 -->
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li Class="OgrynRace.comp.CompProperties_DisableStuffColor" />
+    </comps>
+    <!-- 工具伤害设定：
+         剑刃（割）：10 伤害，1.50 秒/每击，护甲穿透 25%
+         剑尖（刺）：15 伤害，1.50 秒/每击，护甲穿透 25% -->
+    <tools>
+      <li>
+        <label>剑刃（割）</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>剑尖（刺）</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <armorPenetration>0.25</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>
+
+

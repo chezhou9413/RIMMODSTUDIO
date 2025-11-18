@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef>
+        <defName>Fenny</defName>
+        <label>芬妮</label>
+        <race>ApocalypseHuman</race>
+        <combatPower>100</combatPower>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <initialResistanceRange>
+            <min>0</min>
+            <max>0</max>
+        </initialResistanceRange>
+        <apparelRequired>
+            <li>FennyClothes</li>
+        </apparelRequired>
+        <!-- 武器标签（用于武器生成系统，确保装备太阳筹金） -->
+        <weaponMoney>999999~999999</weaponMoney>
+        <weaponTags>
+            <li>fennyWeapon</li>
+        </weaponTags>
+        <initialWillRange>
+            <min>0.5</min>
+            <max>1.0</max>
+        </initialWillRange>
+        <modExtensions>
+            <li Class="ChezhouLib.Extension.kindRule">
+                <kindName>芬妮</kindName>
+                <hairProDefName>Apocalypse_fenny</hairProDefName>
+                <traitName>
+                    <li>Tough</li>
+                </traitName>
+                <bodyAddonRules>
+                    <li>
+                        <BodyAddonName>Apocalypse_Face</BodyAddonName>
+                        <ReplacePath>AlienRace/Apocalypse/Face/face_fenny</ReplacePath>
+                    </li>
+                </bodyAddonRules>
+            </li>
+        </modExtensions>
+        <xenotypeSet>
+            <xenotypeChances>
+                <RB_Xenotype_Apocalypse>1</RB_Xenotype_Apocalypse>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+</Defs> 

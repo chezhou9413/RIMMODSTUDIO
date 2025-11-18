@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <XenotypeDef>
+        <defName>RB_Xenotype_Apocalypse</defName>
+        <iconPath>Textures/Character/Human.png</iconPath>
+        <label>天启者</label>
+        <description>1111​</description>
+        <inheritable>true</inheritable>
+        <displayPriority>10</displayPriority>
+    </XenotypeDef>
+</Defs> 

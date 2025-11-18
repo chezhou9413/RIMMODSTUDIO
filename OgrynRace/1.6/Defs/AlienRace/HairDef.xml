@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <StyleItemCategoryDef>
+        <defName>Ogryn_Category</defName>
+        <label>欧戈苓发型</label>
+    </StyleItemCategoryDef>
+    <HairDef>
+        <defName>Ogryn_null</defName>
+        <label>空白占位发型</label>
+        <hairGender>Any</hairGender>
+        <texPath>AlienRace/Ogryn/Null/Null</texPath>
+        <category>Misc</category>
+        <styleTags>
+            <li>Ogryn_Category</li>
+        </styleTags>
+    </HairDef>
+</Defs> 

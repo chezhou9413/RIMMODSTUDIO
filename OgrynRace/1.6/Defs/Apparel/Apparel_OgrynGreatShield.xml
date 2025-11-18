@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 欧戈巨盾：腰带类装备，参考原版 Apparel_ShieldBelt 槽位与层级配置 -->
+    <ThingDef ParentName="ApparelBase">
+        <defName>Apparel_OgrynGreatShield</defName>
+        <label>欧戈巨盾</label>
+        <description>欧戈巨盾，厚重可靠，用于抵挡伤害的防护装备。</description>
+        <thingClass>Apparel</thingClass>
+        <!-- 贴图路径与图形类需根据实际资源调整 -->
+        <graphicData>
+            <texPath>Apparel/OgrynGreatshield/Greatshield</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>200</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <recipeUsers>
+                <li>HandTailoringBench</li>
+                <li>ElectricTailoringBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <researchPrerequisites>
+                <li>OgrynMetalArmorForging</li>
+            </researchPrerequisites>
+            <displayPriority>250</displayPriority>
+        </recipeMaker>
+        <statBases>
+            <!-- 耐久度上限：500 -->
+            <MaxHitPoints>500</MaxHitPoints>
+            <!-- 易燃性：0 -->
+            <Flammability>0</Flammability>
+            <!-- 老化速率：2 -->
+            <DeteriorationRate>2</DeteriorationRate>
+            <!-- 美观度：-2 -->
+            <Beauty>-2</Beauty>
+            <!-- 工作量（制作）：10000 -->
+            <WorkToMake>60000</WorkToMake>
+            <!-- 重量：8 -->
+            <Mass>8</Mass>
+            <!-- 材料系数：护甲0.8，隔温0/0 -->
+            <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <!-- 护甲面板基础值（非材料加成部分） -->
+            <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <!-- 装备时间：2.5 -->
+            <EquipDelay>2.5</EquipDelay>
+        </statBases>
+        <!-- 穿戴后对角色的状态偏移；近战闪避率、移动速度。原版无“抑止时间乘数”StatDef，若为他模需替换成对应Stat。 -->
+        <equippedStatOffsets>
+            <!-- 近战闪避率：-1（该值为绝对值偏移，注意数值是否过大） -->
+            <MeleeDodgeChance>-1</MeleeDodgeChance>
+            <!-- 移动速度：-0.25 -->
+            <MoveSpeed>-0.25</MoveSpeed>
+            <!-- 抑止时间乘数：-0.25（原版未找到此Stat，请按所用模组StatDef替换） -->
+            <!-- <SuppressionTimeMultiplier>-0.25</SuppressionTimeMultiplier> -->
+        </equippedStatOffsets>
+        <!-- 物品分类与制作成本：200x 金属（Metallic 分类材料） -->
+
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <apparel>
+            <!-- 腰带位穿戴，与原版护盾腰带一致 -->
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Forbiddable" />
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+            <!-- 禁用材料染色组件：强制使用装备定义的颜色 -->
+            <li Class="OgrynRace.comp.CompProperties_DisableStuffColor" />
+            <li Class="ChezhouLib.comp.ApparelAddBodyAddonCompProperties">
+                <targetRaces>
+                    <li>Ogryn</li>
+                </targetRaces>
+                <bodyAddonDefs>
+                    <li>
+                        <name>Ogryn_OgrynGreatshield_Adult</name>
+                        <userCustomizable>true</userCustomizable>
+                        <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                        <path>Apparel/OgrynGreatshield/GreatshieldB</path>
+                        <colorChannel>apparel</colorChannel>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <layerInvert>false</layerInvert>
+                        <angle>0</angle>
+                        <drawSize>0.85</drawSize>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <conditions>
+                            <BodyPart>
+                                <bodyPart>Torso</bodyPart>
+                            </BodyPart>
+                            <Apparel />
+                            <Posture>
+                                <drawnStanding>true</drawnStanding>
+                                <drawnLaying>true</drawnLaying>
+                                <drawnInBed>true</drawnInBed>
+                            </Posture>
+                        </conditions>
+                        <offsets>
+                            <west>
+                                <layerOffset>-0.26</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </west>
+                            <south>
+                                <layerOffset>-0.26</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </south>
+                            <north>
+                                <layerOffset>-0.26</layerOffset>
+                                <offset>(0, -0.36)</offset>
+                            </north>
+                            <east>
+                                <layerOffset>-0.26</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </east>
+                        </offsets>
+                    </li>
+                </bodyAddonDefs>
+                <DraftedbodyAddonDefs>
+                    <li>
+                        <name>Ogryn_OgrynGreatshieldB_Adult</name>
+                        <userCustomizable>true</userCustomizable>
+                        <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                        <path>Apparel/OgrynGreatshield/Greatshield</path>
+                        <colorChannel>apparel</colorChannel>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <layerInvert>false</layerInvert>
+                        <angle>0</angle>
+                        <drawSize>0.85</drawSize>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <conditions>
+                            <BodyPart>
+                                <bodyPart>Torso</bodyPart>
+                            </BodyPart>
+                            <Apparel />
+                            <Posture>
+                                <drawnStanding>true</drawnStanding>
+                                <drawnLaying>true</drawnLaying>
+                                <drawnInBed>true</drawnInBed>
+                            </Posture>
+                        </conditions>
+                        <offsets>
+                            <west>
+                                <layerOffset>-0.28</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </west>
+                            <south>
+                                <layerOffset>-0.28</layerOffset>
+                                <offset>(0.31, -0.38)</offset>
+                            </south>
+                            <north>
+                                <layerOffset>-0.28</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </north>
+                            <east>
+                                <layerOffset>-0.28</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </east>
+                        </offsets>
+                    </li>
+                </DraftedbodyAddonDefs>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>Armor</li>
+            <li>OgrynExclusive</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>
+
+

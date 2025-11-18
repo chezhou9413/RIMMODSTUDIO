@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 欧戈硬金制作配方 -->
+  <RecipeDef>
+    <defName>Make_OgoHardGold</defName>
+    <label>制作欧戈硬金</label>
+    <description>使用精密加工台将玻璃钢、铀和黄金合金制成欧戈硬金。这是欧戈苓的传统工艺，需要高超的技术。</description>
+    <jobString>制作欧戈硬金合金。</jobString>
+    <workAmount>4500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Make</soundWorking>
+    <!-- 需要制作技能 -->
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <!-- 制作失败时返还部分材料 -->
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <!-- 原料需求 -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <!-- 产出物品 -->
+    <products>
+      <OgoHardGold>1</OgoHardGold>
+    </products>
+    <!-- 制作失败时的产物 -->
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Uranium</li>
+        <li>Gold</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <!-- 可在精密装配台制作 -->
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <!-- 研究前置条件 -->
+    <researchPrerequisites>
+      <li>OgoHardGoldCrafting</li>
+    </researchPrerequisites>
+    <!-- 制作时间调整 -->
+    <targetCountAdjustment>1</targetCountAdjustment>
+  </RecipeDef>
+
+  <!-- 欧戈硬金批量制作配方 - 4个 -->
+  <RecipeDef>
+    <defName>Make_OgoHardGold_Batch4</defName>
+    <label>批量制作欧戈硬金 (4个)</label>
+    <description>使用精密加工台批量制作4个欧戈硬金。这是欧戈苓的传统工艺，需要高超的技术。</description>
+    <jobString>批量制作欧戈硬金合金 (4个)。</jobString>
+    <workAmount>18000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Make</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <products>
+      <OgoHardGold>4</OgoHardGold>
+    </products>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Uranium</li>
+        <li>Gold</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>OgoHardGoldCrafting</li>
+    </researchPrerequisites>
+    <targetCountAdjustment>1</targetCountAdjustment>
+  </RecipeDef>
+
+  <!-- 欧戈硬金批量制作配方 - 10个 -->
+  <RecipeDef>
+    <defName>Make_OgoHardGold_Batch10</defName>
+    <label>批量制作欧戈硬金 (10个)</label>
+    <description>使用精密加工台批量制作10个欧戈硬金。这是欧戈苓的传统工艺，需要高超的技术。</description>
+    <jobString>批量制作欧戈硬金合金 (10个)。</jobString>
+    <workAmount>45000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Make</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <OgoHardGold>10</OgoHardGold>
+    </products>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Uranium</li>
+        <li>Gold</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>OgoHardGoldCrafting</li>
+    </researchPrerequisites>
+    <targetCountAdjustment>1</targetCountAdjustment>
+  </RecipeDef>
+
+  <!-- 欧戈硬金批量制作配方 - 30个 -->
+  <RecipeDef>
+    <defName>Make_OgoHardGold_Batch30</defName>
+    <label>批量制作欧戈硬金 (30个)</label>
+    <description>使用精密加工台批量制作30个欧戈硬金。这是欧戈苓的传统工艺，需要高超的技术。</description>
+    <jobString>批量制作欧戈硬金合金 (30个)。</jobString>
+    <workAmount>135000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Make</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <products>
+      <OgoHardGold>30</OgoHardGold>
+    </products>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Uranium</li>
+        <li>Gold</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>OgoHardGoldCrafting</li>
+    </researchPrerequisites>
+    <targetCountAdjustment>1</targetCountAdjustment>
+  </RecipeDef>
+</Defs>

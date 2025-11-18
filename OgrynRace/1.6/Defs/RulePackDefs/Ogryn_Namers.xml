@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerSettlementOgryn</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->冰脊聚落</li>
+                <li>r_name->巨木聚落</li>
+                <li>r_name->熔岩聚落</li>
+                <li>r_name->泥沼聚落</li>
+                <li>r_name->黑棘聚落</li>
+                <li>r_name->腐沼聚落</li>
+                <li>r_name->啃骨聚落</li>
+                <li>r_name->骨祭聚落</li>
+                <li>r_name->噬魂聚落</li>
+                <li>r_name->鲨鱼聚落</li>
+                <li>r_name->汤圆聚落</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs> 

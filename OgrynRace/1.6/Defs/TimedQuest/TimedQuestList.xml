@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <OgrynRace.Ogryn.TimedQuestList>
+    <defName>ExampleQuestSchedule</defName>
+    <label>Example quest schedule</label>
+    <quests>
+      <li>
+        <questDefName>OGR_GiveQuest_OgrynManhunterJoin</questDefName>
+        <mintick>240000</mintick>
+        <maxtick>360000</maxtick>
+      </li>
+    </quests>
+  </OgrynRace.Ogryn.TimedQuestList>
+</Defs> 

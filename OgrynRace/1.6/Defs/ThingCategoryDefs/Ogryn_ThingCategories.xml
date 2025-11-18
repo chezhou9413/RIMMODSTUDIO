@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 欧戈苓盔甲物品分类：用于统一归类欧戈苓相关盔甲与头盔 -->
+	<ThingCategoryDef>
+		<defName>OgrynArmorCategory</defName>
+		<label>欧戈苓盔甲</label>
+		<parent>ApparelArmor</parent>
+	</ThingCategoryDef>
+	<!-- 欧戈苓低级近战武器分类 -->
+	<ThingCategoryDef>
+		<defName>OgrynMeleeLowCategory</defName>
+		<label>欧戈苓低级近战武器</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+	<!-- 欧戈苓高级近战武器分类 -->
+	<ThingCategoryDef>
+		<defName>OgrynMeleeHighCategory</defName>
+		<label>欧戈苓高级近战武器</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+
+    <ThingCategoryDef>
+		<defName>OgrynMeleeMasterCategory</defName>
+		<label>欧戈苓大师近战武器</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+</Defs>
+
+

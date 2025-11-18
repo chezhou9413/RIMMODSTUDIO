@@ -1,0 +1,7 @@
+C:\Users\30978\Desktop\修改\rimmod\Rimbreak\1.6\Assemblies\rimbreak.dll
+C:\Users\30978\Desktop\修改\rimmod\Rimbreak\1.6\Assemblies\rimbreak.pdb
+C:\Users\30978\Desktop\修改\rimmod\Rimbreak\1.6\Source\rimbreak\obj\Debug\rimbreak.csproj.AssemblyReference.cache
+C:\Users\30978\Desktop\修改\rimmod\Rimbreak\1.6\Source\rimbreak\obj\Debug\rimbreak.csproj.CoreCompileInputs.cache
+C:\Users\30978\Desktop\修改\rimmod\Rimbreak\1.6\Source\rimbreak\obj\Debug\rimbreak.dll
+C:\Users\30978\Desktop\修改\rimmod\Rimbreak\1.6\Source\rimbreak\obj\Debug\rimbreak.pdb
+C:\Users\30978\Desktop\修改\rimmod\Rimbreak\1.6\Source\rimbreak\obj\Debug\rimbreak.csproj.Up2Date

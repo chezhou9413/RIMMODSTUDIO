@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 芙莉安娜之赐种植技术研究项目 -->
+  <ResearchProjectDef>
+    <defName>FurianaBlessingCultivation</defName>
+    <label>芙莉安娜之赐种植</label>
+    <description>学习种植神秘的芙莉安娜之赐植物。这种植物在收获时有概率产出珍贵的肉类资源，包括牛肉、水牛肉，甚至还有极小的概率产出黄金。掌握这种植物的种植技术将为殖民地提供稳定的食物来源。</description>
+    <!-- 研究成本：1500科研点数 -->
+    <baseCost>1500</baseCost>
+    <!-- 技术等级：中世纪 -->
+    <techLevel>Medieval</techLevel>
+    <!-- 无研究前置条件 -->
+    <prerequisites>
+    </prerequisites>
+    <!-- 研究树位置 -->
+    <researchViewX>0</researchViewX>
+    <researchViewY>3.0</researchViewY>
+    <!-- 研究标签页 -->
+    <tab>OgrynTech</tab>
+    <!-- 研究标签 -->
+    <tags>
+    </tags>
+    <!-- 研究完成时的信件 -->
+    <discoveredLetterTitle>关于：芙莉安娜之赐种植</discoveredLetterTitle>
+    <discoveredLetterText>您的殖民地已经掌握了芙莉安娜之赐植物的种植技术。这种神秘的植物在收获时能够产出珍贵的肉类资源，包括牛肉、水牛肉，甚至还有极小的概率产出黄金。\n\n现在您可以在种植区种植这种神奇的植物，为殖民地提供稳定的食物来源。这种植物需要肥沃的土壤才能茁壮成长。</discoveredLetterText>
+    <!-- 研究规则和故事生成 -->
+    <generalRules>
+      <rulesStrings>
+        <li>subject->芙莉安娜之赐种植</li>
+        <li>subject->神秘植物栽培</li>
+        
+        <li>subject_story->在古老的欧戈苓传说中发现了芙莉安娜之赐的秘密</li>
+        <li>subject_story->通过研究神秘的植物种子，掌握了特殊的种植技术</li>
+        <li>subject_story->在温室中反复试验，终于找到了最佳的种植方法</li>
+        <li>subject_story->从欧戈苓长老那里学习了世代相传的植物栽培技艺</li>
+        
+        <li>subject_gerund->研究芙莉安娜之赐种植</li>
+        <li>subject_gerund->学习神秘植物栽培</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 欧戈苓皮甲制作：解锁欧戈苓硬皮系服装的制作规范 -->
+  <ResearchProjectDef>
+    <defName>OgrynHardLeatherCrafting</defName>
+    <label>欧戈苓皮甲制作</label>
+    <description>研究欧戈苓传统的皮革处理与缝制技艺，规范欧戈苓硬皮甲与相关头甲的制作流程。</description>
+    <!-- 研究成本（与原版中低阶服装接近） -->
+    <baseCost>800</baseCost>
+    <!-- 技术等级：工业 -->
+    <techLevel>Medieval</techLevel>
+    <!-- 前置：原版“基础衣物”（ComplexClothing） -->
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+    <!-- 研究树位置（避免与现有研究重叠，可按需微调） -->
+    <researchViewX>0</researchViewX>
+    <researchViewY>2</researchViewY>
+    <!-- 归属页签：欧戈苓 -->
+    <tab>OgrynTech</tab>
+    <!-- 主题化信件 -->
+    <discoveredLetterTitle>关于：欧戈苓皮甲制作</discoveredLetterTitle>
+    <discoveredLetterText>殖民地掌握了欧戈苓的皮革处理与缝制技艺。现在可以更高效地制作欧戈苓硬皮甲与配套头甲。</discoveredLetterText>
+  </ResearchProjectDef>
+</Defs>
+
+

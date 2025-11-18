@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FactionDef ParentName="FactionBase">
+        <defName>OgrynFaction</defName>
+        <label>ogryn warband</label>
+        <description>一支只由欧戈苓组成的聚落团体，极度尚武，终生为战。</description>
+        <pawnSingular>ogryn</pawnSingular>
+        <pawnsPlural>ogryns</pawnsPlural>
+        <isPlayer>false</isPlayer>
+        <permanentEnemy>false</permanentEnemy>
+        <hidden>false</hidden>
+        <canMakeRandomly>true</canMakeRandomly>
+        <categoryTag>Outlander</categoryTag>
+        <listOrderPriority>5</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <naturalEnemy>false</naturalEnemy>
+        <leaderTitle>欧戈族长</leaderTitle>
+        <fixedLeaderKinds>
+            <li>OgrynAdvancedWarrior</li>
+        </fixedLeaderKinds>
+        <factionIconPath>Faction/OgrynFaction</factionIconPath>
+        <techLevel>Medieval</techLevel>
+        <canSiege>false</canSiege>
+        <canStageAttacks>false</canStageAttacks>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOgryn</settlementNameMaker>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Ogryn_Backstory_Child</li>
+                    <li>Ogryn_Backstory_Adult</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <caravanTraderKinds>
+            <li>Caravan_Ogryn_Standard</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Ogryn_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Ogryn_Standard</li>
+        </baseTraderKinds>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>15</configurationListOrderPriority>
+        <xenotypeSet>
+            <xenotypeChances>
+                <OGR_Xenotype_Ogryn>1</OGR_Xenotype_Ogryn>
+            </xenotypeChances>
+        </xenotypeSet>
+        <basicMemberKind>OgrynAdvancedWarrior</basicMemberKind>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <OgrynApprentice>20</OgrynApprentice>
+                    <OgrynAdvancedWarrior>3</OgrynAdvancedWarrior>
+                    <OgrynWarrior>10</OgrynWarrior>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <OgrynApprentice>20</OgrynApprentice>
+                    <OgrynAdvancedWarrior>3</OgrynAdvancedWarrior>
+                    <OgrynWarrior>10</OgrynWarrior>
+                    <!-- 加入轻装的 OgrynTrader，便于被挑选为访客型交易员 -->
+                    <OgrynTrader>2</OgrynTrader>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <OgrynTrader>1</OgrynTrader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <!-- 降低学徒权重，提升战士与近卫，避免商队全是学徒 -->
+                    <OgrynApprentice>8</OgrynApprentice>
+                    <OgrynWarrior>10</OgrynWarrior>
+                    <OgrynAdvancedWarrior>4</OgrynAdvancedWarrior>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <OgrynApprentice>20</OgrynApprentice>
+                    <OgrynWarrior>10</OgrynWarrior>
+                    <OgrynAdvancedWarrior>3</OgrynAdvancedWarrior>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>Faction/OgrynFaction</settlementTexturePath>
+    </FactionDef>
+</Defs> 

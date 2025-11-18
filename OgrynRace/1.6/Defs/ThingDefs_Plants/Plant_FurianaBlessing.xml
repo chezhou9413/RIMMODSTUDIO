@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef>
+        <defName>Plant_FurianaBlessing</defName>
+        <label>芙莉安娜之赐</label>
+        <description>收货之后概率获得雪牛肉，牛肉</description>
+        <thingClass>Plant</thingClass>
+        <category>Plant</category>
+        <altitudeLayer>LowPlant</altitudeLayer>
+        <useHitPoints>false</useHitPoints>
+        <selectable>true</selectable>
+        <drawerType>MapMeshOnly</drawerType>
+        <pathCost>14</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="OgrynRace.comp.OgrynPlantCompProperties">
+                <SproutPath>Plants/FurianaBlessing_Sprout</SproutPath>
+                <matureMature>
+                    <li>
+                        <path>Plants/FurianaBlessing_Mature1</path>
+                        <Probability>0.49</Probability>
+                        <ReceiveGoodsDef>Meat_Cow</ReceiveGoodsDef>
+                        <count>60</count>
+                    </li>
+                    <li>
+                        <path>Plants/FurianaBlessing_Mature2</path>
+                        <Probability>0.49</Probability>
+                        <ReceiveGoodsDef>Meat_Muffalo</ReceiveGoodsDef>
+                        <count>60</count>
+                    </li>
+                    <li>
+                        <path>Plants/FurianaBlessing_Mature3</path>
+                        <Probability>0.02</Probability>
+                        <ReceiveGoodsDef>Gold</ReceiveGoodsDef>
+                        <count>60</count>
+                    </li>
+                </matureMature>
+            </li>
+        </comps>
+
+
+        <!-- 物体贴图（地面展示） -->
+        <graphicData>
+            <!-- 成熟期展示贴图（你也可以改成 Mature2/Mature3 任一张） -->
+            <texPath>Plants/FurianaBlessing_Sprout</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutPlant</shaderType>
+        </graphicData>
+
+
+        <statBases>
+            <Beauty>1</Beauty>
+        </statBases>
+
+        <plant>
+            <!-- 原版仅支持单一幼体贴图字段，而非 growthGraphicPaths 列表 -->
+            <immatureGraphicPath>Plants/FurianaBlessing_Seed</immatureGraphicPath>
+            <!-- 肥沃度需求100% -->
+            <fertilityMin>1</fertilityMin>
+            <fertilitySensitivity>0.6</fertilitySensitivity>
+            <!-- 收割音效（避免 PlayOneShot 空引用） -->
+            <soundHarvesting>Harvest_Standard</soundHarvesting>
+            <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+            <!-- 30天生长 -->
+            <growDays>30</growDays>
+
+            <topWindExposure>0.1</topWindExposure>
+            <harvestWork>180</harvestWork>
+            <!-- 单次收获产出60 -->
+            <harvestYield>60</harvestYield>
+            <harvestTag>Standard</harvestTag>
+            <!-- 改为原版莓果 RawBerries -->
+            <harvestedThingDef>RawBerries</harvestedThingDef>
+            <dieIfLeafless>true</dieIfLeafless>
+            <sowMinSkill>6</sowMinSkill>
+            <sowWork>2000</sowWork>
+            <sowTags>
+                <!-- 允许常规耕地与水培种植（与原版一致） -->
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <!-- 研究前置条件：需要完成芙莉安娜之赐种植研究 -->
+            <sowResearchPrerequisites>
+                <li>FurianaBlessingCultivation</li>
+            </sowResearchPrerequisites>
+            <!-- 不设置 wildBiomes，表示不在野外自然生成，仅可人工种植 -->
+        </plant>
+        <!-- 建造菜单归属：种植区会自动包含拥有 sowTags 的植物，无需额外 Designation -->
+    </ThingDef>
+
+</Defs>
+
+

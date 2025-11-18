@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseWeapon">
+        <defName>jin_Kageha</defName>
+        <label>藏锋</label>
+        <description>占位简介</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>appare/jin/Kageha2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <techLevel>Industrial</techLevel>
+        <smeltable>false</smeltable>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>3.5</Mass>
+        </statBases>
+        <thingCategories>
+            <li>WeaponsMelee</li>
+        </thingCategories>
+        <weaponClasses>
+            <li>MeleeBlunt</li>
+        </weaponClasses>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <weaponTags>
+            <li>JinWeapon</li>
+        </weaponTags>
+        <comps>
+            <li Class = "ChezhouLib.Comp.CompProperties_AbilityGiver_Direct">
+                <abilityDef>
+                    <li>jin_JudgmentFinalStrike</li>
+                    <li>jin_PaidJustice</li>
+                </abilityDef>
+            </li>
+            <li Class="ChezhouLib.Comp.CompProperties_KindLocked">
+                <requiredPawnKindDefName>
+                    <li>jin</li>
+                </requiredPawnKindDefName>
+            </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Forbiddable" />
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+            <li Class="ChezhouLib.comp.ApparelAddBodyAddonCompProperties">
+                <targetRaces>
+                    <li>ApocalypseHuman</li>
+                </targetRaces>
+                <bodyAddonDefs>
+                    <li>
+                        <name>jin_Kageha1</name>
+                        <userCustomizable>true</userCustomizable>
+                        <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                        <path>appare/jin/Kageha3</path>
+                        <colorChannel>apparel</colorChannel>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <layerInvert>false</layerInvert>
+                        <angle>0</angle>
+                        <drawSize>0.5</drawSize>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <conditions>
+                            <BodyPart>
+                                <bodyPart>Torso</bodyPart>
+                            </BodyPart>
+                            <Apparel />
+                            <Posture>
+                                <drawnStanding>true</drawnStanding>
+                                <drawnLaying>true</drawnLaying>
+                                <drawnInBed>true</drawnInBed>
+                            </Posture>
+                        </conditions>
+                        <offsets>
+                            <west>
+                                <layerOffset>0</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </west>
+                            <south>
+                                <layerOffset>-0.3</layerOffset>
+                                <offset>(-0.1, -0.45)</offset>
+                            </south>
+                            <north>
+                                <layerOffset>-0.285</layerOffset>
+                                <offset>(0.1,-0.45)</offset>
+                            </north>
+                            <east>
+                                <layerOffset>0</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </east>
+                        </offsets>
+                    </li>
+                </bodyAddonDefs>
+                <DraftedbodyAddonDefs>
+                    <li>
+                        <name>jin_Kageha2</name>
+                        <userCustomizable>true</userCustomizable>
+                        <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                        <path>appare/jin/Kageha1</path>
+                        <colorChannel>apparel</colorChannel>
+                        <inFrontOfBody>true</inFrontOfBody>
+                        <layerInvert>false</layerInvert>
+                        <angle>0</angle>
+                        <drawSize>0.5</drawSize>
+                        <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <defaultOffset>Center</defaultOffset>
+                        <alignWithHead>true</alignWithHead>
+                        <conditions>
+                            <BodyPart>
+                                <bodyPart>Torso</bodyPart>
+                            </BodyPart>
+                            <Apparel />
+                            <Posture>
+                                <drawnStanding>true</drawnStanding>
+                                <drawnLaying>true</drawnLaying>
+                                <drawnInBed>true</drawnInBed>
+                            </Posture>
+                        </conditions>
+                        <offsets>
+                            <west>
+                                <layerOffset>0</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </west>
+                            <south>
+                                <layerOffset>-0.3</layerOffset>
+                                <offset>(-0.1, -0.45)</offset>
+                            </south>
+                            <north>
+                                <layerOffset>-0.285</layerOffset>
+                                <offset>(0.1, -0.45)</offset>
+                            </north>
+                            <east>
+                                <layerOffset>0</layerOffset>
+                                <offset>(0, 0)</offset>
+                            </east>
+                        </offsets>
+                    </li>
+                </DraftedbodyAddonDefs>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>剑柄（钝击）</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <armorPenetration>0.6</armorPenetration>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+            <li>
+                <label>剑尖（刺）</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>30</power>
+                <armorPenetration>0.6</armorPenetration>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>剑刃（割）</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <armorPenetration>0.6</armorPenetration>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>
+
+

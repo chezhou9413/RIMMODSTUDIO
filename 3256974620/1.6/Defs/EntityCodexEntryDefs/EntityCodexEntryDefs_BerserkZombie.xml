@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 
+        狂暴僵尸异常实体图鉴条目定义
+        这是定义异常实体的第一步
+    -->
+    <EntityCodexEntryDef>
+        <!-- 定义名称（必须唯一） -->
+        <defName>BerserkZombie</defName>
+        
+        <!-- 显示名称（会被翻译） -->
+        <label>berserk zombie</label>
+        
+        <!-- 描述：狂暴僵尸是比普通蹒跚者更加危险的存在，它们拥有更强的攻击性和速度 -->
+        <description>Corpses reanimated by dark psychic energy. Berserk zombies are faster, more aggressive, and more dangerous than regular shamblers. They attack relentlessly with increased speed and ferocity.</description>
+        
+        <!-- 实体类别：Basic（基础） -->
+        <category>Basic</category>
+        
+        <!-- 图标路径（相对于Textures文件夹，不需要.png扩展名） -->
+        <!-- 需要准备两个图标：
+             - UI/CodexEntries/BerserkZombie.png（正常图标）
+             - UI/CodexEntries/BerserkZombie_Silhouette.png（轮廓图标，未发现时显示）
+        -->
+        <uiIconPath>UI/CodexEntries/BerserkZombie</uiIconPath>
+        
+        <!-- 关联的生物定义 -->
+        <linkedThings>
+            <li>BerserkZombie</li>
+        </linkedThings>
+        
+        <!-- 使用ThingDef的描述（可选，如果设置了此字段，上面的description会被忽略） -->
+        <!-- <useDescriptionFrom>BerserkZombie</useDescriptionFrom> -->
+        
+        <!-- 发现类型：Spawn（实体生成时发现） -->
+        <discoveryType>Spawn</discoveryType>
+        
+        <!-- 类别中的排序顺序（数字越小越靠前，Shambler是400，我们设置为450） -->
+        <orderInCategory>450</orderInCategory>
+        
+        <!-- 发现此实体后解锁的研究项目（可选） -->
+        <!-- <discoveredResearchProjects>
+            <li>SummonBerserkZombies</li>
+        </discoveredResearchProjects> -->
+        
+        <!-- 与此实体相关的事件（激发事件）（可选） -->
+        <!-- <provocationIncidents>
+            <li>BerserkZombieSwarm</li>
+            <li>BerserkZombieAssault</li>
+        </provocationIncidents> -->
+    </EntityCodexEntryDef>
+</Defs>

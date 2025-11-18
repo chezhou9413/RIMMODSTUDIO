@@ -1,0 +1,8 @@
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Source\ChezhouLib\bin\Debug\ChezhouLib.dll
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Source\ChezhouLib\bin\Debug\ChezhouLib.pdb
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Assemblies\ChezhouLib.dll
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Assemblies\ChezhouLib.pdb
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Source\ChezhouLib\obj\Debug\ChezhouLib.csproj.AssemblyReference.cache
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Source\ChezhouLib\obj\Debug\ChezhouLib.csproj.CoreCompileInputs.cache
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Source\ChezhouLib\obj\Debug\ChezhouLib.dll
+E:\huanshijie\1.6\RimWorld\Mods\ChezhouLib\1.6\Source\ChezhouLib\obj\Debug\ChezhouLib.pdb

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 欧戈巨锤：欧戈苓高级近战武器 -->
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>Ogryn_MeleeWeapon_OgoGreatHammer</defName>
+    <label>欧戈巨锤</label>
+    <description>欧戈苓的高级战争巨锤。粗壮的锤柄可用于捅刺，厚重的锤头能造成致命钝击。专为强壮的欧戈战士打造。</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Wappen/OgoGreatHamme</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <!-- 制作与质量：可按需调整成本与工时 -->
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>3.5</Mass>
+    </statBases>
+    <equippedAngleOffset>35</equippedAngleOffset>
+    <!-- 材料系统：改为金属材料（Metallic） -->
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <!-- 配方制作器：自动生成配方，使用任意金属材料 -->
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>OgrynHighLevelMeleeWeaponForge</li>
+      </researchPrerequisites>
+      <displayPriority>250</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+      <li>IndustrialMeleeAdvanced</li>
+      <li>OgrynMeleeHighCategory</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>OgrynExclusive</li>
+    </tradeTags>
+    <thingCategories>
+      <li>OgrynMeleeHighCategory</li>
+    </thingCategories>
+    <!-- 组件 -->
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <!-- 添加CompColorable组件以强制白色 -->
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <!-- 禁用材料染色组件：强制使用装备定义的颜色 -->
+      <li Class="OgrynRace.comp.CompProperties_DisableStuffColor" />
+    </comps>
+    <tools>
+      <li>
+        <label>锤柄（捅）</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>锤头（钝击）</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>
+
+

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <QuestScriptDef>
+        <defName>OGR_Util_JoinerWalkIn_Ogryn</defName>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>rewardDescription->[joiner_nameDef]（欧格林）将抵达并加入你。[joiner_relationInfo]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_GeneratePawn">
+                    <storeAs>joiner</storeAs>
+                    <kindDef>OgrynTest</kindDef>
+                    <allowPregnant>true</allowPregnant>
+                </li>
+                <li Class="QuestNode_SetChildCount">
+                    <pawns>$joiner</pawns>
+                </li>
+                <li Class="QuestNode_PawnsArrive">
+                    <pawns>$joiner</pawns>
+                    <joinPlayer>true</joinPlayer>
+                    <customLetterLabel>$customLetterLabel</customLetterLabel>
+                    <customLetterText>$customLetterText</customLetterText>
+                    <customLetterLabelRules>$customLetterLabelRules</customLetterLabelRules>
+                    <customLetterTextRules>$customLetterTextRules</customLetterTextRules>
+                    <isSingleReward>true</isSingleReward>
+                    <rewardDetailsHidden>true</rewardDetailsHidden>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+    <QuestScriptDef>
+        <defName>OGR_ThreatReward_Manhunters_Joiner_Ogryn</defName>
+        <isRootSpecial>true</isRootSpecial>
+        <rootSelectionWeight>0</rootSelectionWeight>
+        <rootMinPoints>0</rootMinPoints>
+        <expireDaysRange>50.0</expireDaysRange>
+        <rootIncreasesPopulation>true</rootIncreasesPopulation>
+        <defaultCharity>true</defaultCharity>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName(animalCount==1)->[joiner_nameDef]与[animalKind_label]的追杀</li>
+                <li>questName(animalCount>=2)->[joiner_nameDef]与[animalKind_labelPlural]的追杀</li>
+                <li>questName->欧格林被追杀</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription(animalCount==1)->一名欧格林[joiner_nameDef]正在附近呼救！(*Threat)一只发狂的[animalKind_label](/Threat)正在追杀[joiner_objective]！ [joiner_pronoun]乞求庇护，并承诺加入你在[map_definite]的殖民地。[joiner_relationInfo] 如果你接受，发狂的[animalKind_label]将在[manhuntersDelayTicks_duration]后追来。</li>
+                <li>questDescription(animalCount>=2)->一名欧格林[joiner_nameDef]正在附近呼救！(*Threat)[animalCount]只发狂的[animalKind_labelPlural](/Threat)正在追杀[joiner_objective]！ [joiner_pronoun]乞求庇护，并承诺加入你在[map_definite]的殖民地。[joiner_relationInfo] 如果你接受，这群野兽将在[manhuntersDelayTicks_duration]后追来。</li>
+                <li>manhunterArrivalLetterEnd(animalCount==1)->这只[animalKind_label]正追着[joiner_nameDef]而来。</li>
+                <li>manhunterArrivalLetterEnd(animalCount>=2)->这些[animalKind_labelPlural]正追着[joiner_nameDef]而来。</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetWalkInSpot" />
+                <li Class="QuestNode_Set">
+                    <name>points</name>
+                    <value>35</value>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>OGR_Util_JoinerWalkIn_Ogryn</def>
+                    <parms>
+                        <customLetterText>一名欧格林[joiner_nameDef]冲了进来，气喘吁吁。追兵即将到达！</customLetterText>
+                    </parms>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>manhuntersDelayTicks</name>
+                    <value>$(roundToTicksRough(randInt(2500, 3400)))</value>
+                </li>
+                <li Class="QuestNode_Delay">
+                    <delayTicks>$manhuntersDelayTicks</delayTicks>
+                    <waitUntilPlayerHasHomeMap>true</waitUntilPlayerHasHomeMap>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_ManhunterPack">
+                                <customLetterLabel>{BASELABEL}：正追击[joiner_nameDef]</customLetterLabel>
+                                <customLetterText>{BASETEXT}\n\n[manhunterArrivalLetterEnd]</customLetterText>
+                            </li>
+                            <li Class="QuestNode_SendSignals">
+                                <outSignals>ManhuntersArrived</outSignals>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_AllSignals">
+                    <inSignals>
+                        <li>ManhuntersArrived</li>
+                        <li>JoinerArrived</li>
+                    </inSignals>
+                    <node Class="QuestNode_End" />
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+</Defs> 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 欧戈苓盔甲金属盔甲锻造：解锁欧戈苓金属盔甲系列的加工与装配规范 -->
+  <ResearchProjectDef>
+    <defName>OgrynMetalArmorForging</defName>
+    <label>欧戈苓金属盔甲锻造</label>
+    <description>系统化欧戈苓金属盔甲的锻造、热处理与装配工艺，完善材料选择与装甲结构的技术规范。</description>
+    <!-- 研究成本：与中高阶护甲接近，可按需后续微调 -->
+    <baseCost>2200</baseCost>
+    <!-- 技术等级：工业时代 -->
+    <techLevel>Medieval</techLevel>
+    <!-- 前置：欧戈苓皮甲制作（已存在） -->
+    <prerequisites>
+      <li>OgrynHardLeatherCrafting</li>
+    </prerequisites>
+    <!-- 研究树位置：避免与同系研究重叠（可根据实际布局再调） -->
+    <researchViewX>1.5</researchViewX>
+    <researchViewY>2</researchViewY>
+    <!-- 所属页签 -->
+    <tab>OgrynTech</tab>
+    <!-- 主题化信件提示 -->
+    <discoveredLetterTitle>关于：欧戈苓金属盔甲锻造</discoveredLetterTitle>
+    <discoveredLetterText>殖民地已掌握欧戈苓金属盔甲的锻造与装配规范，可更高效地加工并装配欧戈苓金属盔甲。</discoveredLetterText>
+  </ResearchProjectDef>
+</Defs>
+
+

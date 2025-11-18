@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\rimworlddll\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\rimworlddll\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\rimworlddll\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="NAudio" />
+    <Reference Include="NVorbis" />
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\rimworlddll\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections" />
+    <Reference Include="Unity.Burst" />
+    <Reference Include="Unity.Mathematics" />
+    <Reference Include="com.rlabrecque.steamworks.net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Assembly-CSharp-firstpass" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\rimworlddll\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="ISharpZipLib" />
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\rimworlddll\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule" />
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\rimworlddll\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\rimworlddll\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

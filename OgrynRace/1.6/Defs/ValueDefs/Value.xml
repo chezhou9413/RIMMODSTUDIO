@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <StatDef>
+        <defName>chezhouHungerRate</defName>
+        <label>饥饿度下降系数</label>
+        <description>此数值用于乘算的饥饿度的下降速度</description>
+        <defaultBaseValue>1</defaultBaseValue>
+        <toStringStyle>PercentZero</toStringStyle>
+        <category>PawnHealth</category>
+        <hideAtValue>1</hideAtValue>
+        <showOnHumanlikes>true</showOnHumanlikes>
+        <showOnPawns>true</showOnPawns>
+        <showOnAnimals>true</showOnAnimals>
+        <showIfUndefined>false</showIfUndefined>
+        <minValue>0</minValue>
+    </StatDef>
+</Defs>

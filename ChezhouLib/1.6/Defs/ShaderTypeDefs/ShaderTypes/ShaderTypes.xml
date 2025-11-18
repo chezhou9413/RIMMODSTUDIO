@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+    <ShaderTypeDef>
+        <defName>HairSwayCutoutRim_Falloff</defName>
+        <shaderPath>Custom/HairSwayCutoutRim_Falloff</shaderPath>
+    </ShaderTypeDef>
+</Defs> 

@@ -1,0 +1,6 @@
+C:\Users\30978\Desktop\修改\rimmod\OgrynRace\1.6\Assemblies\OgrynRace.dll
+C:\Users\30978\Desktop\修改\rimmod\OgrynRace\1.6\Assemblies\OgrynRace.pdb
+C:\Users\30978\Desktop\修改\rimmod\OgrynRace\1.6\Source\OgrynRace\obj\Debug\OgrynRace.csproj.AssemblyReference.cache
+C:\Users\30978\Desktop\修改\rimmod\OgrynRace\1.6\Source\OgrynRace\obj\Debug\OgrynRace.csproj.CoreCompileInputs.cache
+C:\Users\30978\Desktop\修改\rimmod\OgrynRace\1.6\Source\OgrynRace\obj\Debug\OgrynRace.dll
+C:\Users\30978\Desktop\修改\rimmod\OgrynRace\1.6\Source\OgrynRace\obj\Debug\OgrynRace.pdb

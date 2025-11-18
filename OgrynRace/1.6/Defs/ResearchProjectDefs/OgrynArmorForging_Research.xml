@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 欧戈苓护甲锻造技术研究项目 -->
+  <ResearchProjectDef>
+    <defName>OgrynArmorForging</defName>
+    <label>欧戈苓高级护甲锻造</label>
+    <description>学习欧戈苓传统的护甲锻造技术，掌握使用欧戈硬金制作高级护甲的复杂工艺。这种技术结合了欧戈苓的金属加工技艺和护甲设计理念，能够制作出既美观又实用的高级护甲。</description>
+    <!-- 研究成本：2500科研点数 -->
+    <baseCost>4000</baseCost>
+    <!-- 技术等级：工业时代 -->
+    <techLevel>Medieval</techLevel>
+    <!-- 研究前置条件：需要欧戈硬金制作技术 -->
+    <prerequisites>
+      <li>OgoHardGoldCrafting</li>
+      <li>Fabrication</li>
+      <li>OgrynMetalArmorForging</li>
+    </prerequisites>
+    <!-- 研究树位置 -->
+    <researchViewX>3</researchViewX>
+    <researchViewY>2</researchViewY>
+    <!-- 研究标签页 -->
+    <tab>OgrynTech</tab>
+    <!-- 研究标签 -->
+    <tags>
+    </tags>
+    <!-- 研究完成时的信件 -->
+    <discoveredLetterTitle>关于：欧戈苓护甲锻造</discoveredLetterTitle>
+    <discoveredLetterText>您的殖民地已经掌握了欧戈苓传统的护甲锻造技术。通过结合欧戈硬金的优异性能和欧戈苓的护甲设计理念，现在可以制作出既美观又实用的高级护甲。\n\n这种护甲不仅具有出色的防护性能，还体现了欧戈苓深厚的文化底蕴。您现在可以在精密装配台上制作欧戈苓护甲了。</discoveredLetterText>
+    <!-- 研究规则和故事生成 -->
+    <generalRules>
+      <rulesStrings>
+        <li>subject->欧戈苓护甲锻造</li>
+        <li>subject->欧戈苓护甲工艺</li>
+        
+        <li>subject_story->在古老的欧戈苓遗迹中发现了护甲锻造的秘密</li>
+        <li>subject_story->通过研究欧戈苓的传统护甲，掌握了金属护甲制作技术</li>
+        <li>subject_story->在锻造台前反复试验，终于找到了完美的护甲设计</li>
+        <li>subject_story->从欧戈苓长老那里学习了世代相传的护甲锻造技艺</li>
+        
+        <li>subject_gerund->研究欧戈苓护甲锻造</li>
+        <li>subject_gerund->学习护甲制作工艺</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>
