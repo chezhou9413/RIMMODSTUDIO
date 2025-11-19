@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-    <JobDef>
-        <defName>Rb_jin_PaidJustice</defName>
-        <driverClass>rimbreak.RbJob.JobGiver_JinPaidJustice</driverClass>
-        <reportString>正在施放有偿正义！！！</reportString>
-        <playerInterruptible>true</playerInterruptible>
-    </JobDef>
-</Defs>

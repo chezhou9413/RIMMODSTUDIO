@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-    <HeadTypeDef ParentName="AverageBase">
-        <defName>Ogryn_Head_A</defName>
-        <graphicPath>AlienRace/Ogryn/Null/Null</graphicPath>
-        <gender>None</gender>
-    </HeadTypeDef>
-</Defs>

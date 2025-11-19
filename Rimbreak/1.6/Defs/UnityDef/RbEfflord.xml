@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-    <ChezhouLib.LibDef.UnityEffLord>
-       <defName>RimbreakEff</defName>
-       <ModId>RbEfflord</ModId>
-       <AbPath>/1.6/AssetBundles/rimbreakeff.ab</AbPath>
-       <EffPrefabFolderName>/Eff/</EffPrefabFolderName>
-    </ChezhouLib.LibDef.UnityEffLord>
-</Defs>
